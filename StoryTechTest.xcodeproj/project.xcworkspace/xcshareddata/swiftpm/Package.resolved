@@ -1,0 +1,33 @@
+{
+  "originHash" : "f6682bc12d30baed8e77620996273df7ed00d7464007dc6ee4b14caff0d054ef",
+  "pins" : [
+    {
+      "identity" : "factory",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:hmlongco/Factory.git",
+      "state" : {
+        "revision" : "56129530a97d89d03f610685d348d333af4989bb",
+        "version" : "2.5.2"
+      }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "state" : {
+        "revision" : "cac9a55a3ae92478a2c95042dcc8d9695d2129ca",
+        "version" : "5.21.0"
+      }
+    },
+    {
+      "identity" : "sdwebimageswiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImageSwiftUI.git",
+      "state" : {
+        "revision" : "451c6dfd5ecec2cf626d1d9ca81c2d4a60355172",
+        "version" : "3.1.3"
+      }
+    }
+  ],
+  "version" : 3
+}

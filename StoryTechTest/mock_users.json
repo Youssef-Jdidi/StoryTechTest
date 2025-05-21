@@ -1,0 +1,402 @@
+[
+    {"id": 1, "avatar": "https://randomuser.me/api/portraits/women/1.jpg", "nickname": "user1", "stories": [
+        {"id": 1, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false},
+        {"id": 2, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 2, "avatar": "https://randomuser.me/api/portraits/men/2.jpg", "nickname": "user2", "stories": [
+        {"id": 3, "url": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308", "isLiked": false, "isSeen": false},
+        {"id": 4, "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 3, "avatar": "https://randomuser.me/api/portraits/women/3.jpg", "nickname": "user3", "stories": [
+        {"id": 5, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 4, "avatar": "https://randomuser.me/api/portraits/men/4.jpg", "nickname": "user4", "stories": [
+        {"id": 6, "url": "https://images.unsplash.com/photo-1519985176271-adb1088fa94c", "isLiked": false, "isSeen": false},
+        {"id": 7, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 5, "avatar": "https://randomuser.me/api/portraits/women/5.jpg", "nickname": "user5", "stories": [
+        {"id": 8, "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9", "isLiked": false, "isSeen": false},
+        {"id": 9, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false},
+        {"id": 10, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 6, "avatar": "https://randomuser.me/api/portraits/women/1.jpg", "nickname": "user6", "stories": [
+        {"id": 11, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false},
+        {"id": 12, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 7, "avatar": "https://randomuser.me/api/portraits/men/2.jpg", "nickname": "user7", "stories": [
+        {"id": 13, "url": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308", "isLiked": false, "isSeen": false},
+        {"id": 14, "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 8, "avatar": "https://randomuser.me/api/portraits/women/3.jpg", "nickname": "user8", "stories": [
+        {"id": 15, "url": "https://images.unsplash.com/photo-1519985176271-adb1088fa94c", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 9, "avatar": "https://randomuser.me/api/portraits/men/4.jpg", "nickname": "user9", "stories": [
+        {"id": 16, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false},
+        {"id": 17, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 10, "avatar": "https://randomuser.me/api/portraits/women/5.jpg", "nickname": "user10", "stories": [
+        {"id": 18, "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9", "isLiked": false, "isSeen": false},
+        {"id": 19, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false},
+        {"id": 20, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 11, "avatar": "https://randomuser.me/api/portraits/women/1.jpg", "nickname": "user11", "stories": [
+        {"id": 21, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false},
+        {"id": 22, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 12, "avatar": "https://randomuser.me/api/portraits/men/2.jpg", "nickname": "user12", "stories": [
+        {"id": 23, "url": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308", "isLiked": false, "isSeen": false},
+        {"id": 24, "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 13, "avatar": "https://randomuser.me/api/portraits/women/3.jpg", "nickname": "user13", "stories": [
+        {"id": 25, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 14, "avatar": "https://randomuser.me/api/portraits/men/4.jpg", "nickname": "user14", "stories": [
+        {"id": 26, "url": "https://images.unsplash.com/photo-1519985176271-adb1088fa94c", "isLiked": false, "isSeen": false},
+        {"id": 27, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 15, "avatar": "https://randomuser.me/api/portraits/women/5.jpg", "nickname": "user15", "stories": [
+        {"id": 28, "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9", "isLiked": false, "isSeen": false},
+        {"id": 29, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false},
+        {"id": 30, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 16, "avatar": "https://randomuser.me/api/portraits/women/1.jpg", "nickname": "user16", "stories": [
+        {"id": 31, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false},
+        {"id": 32, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 17, "avatar": "https://randomuser.me/api/portraits/men/2.jpg", "nickname": "user17", "stories": [
+        {"id": 33, "url": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308", "isLiked": false, "isSeen": false},
+        {"id": 34, "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 18, "avatar": "https://randomuser.me/api/portraits/women/3.jpg", "nickname": "user18", "stories": [
+        {"id": 35, "url": "https://images.unsplash.com/photo-1519985176271-adb1088fa94c", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 19, "avatar": "https://randomuser.me/api/portraits/men/4.jpg", "nickname": "user19", "stories": [
+        {"id": 36, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false},
+        {"id": 37, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 20, "avatar": "https://randomuser.me/api/portraits/women/5.jpg", "nickname": "user20", "stories": [
+        {"id": 38, "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9", "isLiked": false, "isSeen": false},
+        {"id": 39, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false},
+        {"id": 40, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 21, "avatar": "https://randomuser.me/api/portraits/women/1.jpg", "nickname": "user21", "stories": [
+        {"id": 41, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false},
+        {"id": 42, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 22, "avatar": "https://randomuser.me/api/portraits/men/2.jpg", "nickname": "user22", "stories": [
+        {"id": 43, "url": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308", "isLiked": false, "isSeen": false},
+        {"id": 44, "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 23, "avatar": "https://randomuser.me/api/portraits/women/3.jpg", "nickname": "user23", "stories": [
+        {"id": 45, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 24, "avatar": "https://randomuser.me/api/portraits/men/4.jpg", "nickname": "user24", "stories": [
+        {"id": 46, "url": "https://images.unsplash.com/photo-1519985176271-adb1088fa94c", "isLiked": false, "isSeen": false},
+        {"id": 47, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 25, "avatar": "https://randomuser.me/api/portraits/women/5.jpg", "nickname": "user25", "stories": [
+        {"id": 48, "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9", "isLiked": false, "isSeen": false},
+        {"id": 49, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false},
+        {"id": 50, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 26, "avatar": "https://randomuser.me/api/portraits/women/1.jpg", "nickname": "user26", "stories": [
+        {"id": 51, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false},
+        {"id": 52, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 27, "avatar": "https://randomuser.me/api/portraits/men/2.jpg", "nickname": "user27", "stories": [
+        {"id": 53, "url": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308", "isLiked": false, "isSeen": false},
+        {"id": 54, "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 28, "avatar": "https://randomuser.me/api/portraits/women/3.jpg", "nickname": "user28", "stories": [
+        {"id": 55, "url": "https://images.unsplash.com/photo-1519985176271-adb1088fa94c", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 29, "avatar": "https://randomuser.me/api/portraits/men/4.jpg", "nickname": "user29", "stories": [
+        {"id": 56, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false},
+        {"id": 57, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 30, "avatar": "https://randomuser.me/api/portraits/women/5.jpg", "nickname": "user30", "stories": [
+        {"id": 58, "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9", "isLiked": false, "isSeen": false},
+        {"id": 59, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false},
+        {"id": 60, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 31, "avatar": "https://randomuser.me/api/portraits/women/1.jpg", "nickname": "user31", "stories": [
+        {"id": 61, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false},
+        {"id": 62, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 32, "avatar": "https://randomuser.me/api/portraits/men/2.jpg", "nickname": "user32", "stories": [
+        {"id": 63, "url": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308", "isLiked": false, "isSeen": false},
+        {"id": 64, "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 33, "avatar": "https://randomuser.me/api/portraits/women/3.jpg", "nickname": "user33", "stories": [
+        {"id": 65, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 34, "avatar": "https://randomuser.me/api/portraits/men/4.jpg", "nickname": "user34", "stories": [
+        {"id": 66, "url": "https://images.unsplash.com/photo-1519985176271-adb1088fa94c", "isLiked": false, "isSeen": false},
+        {"id": 67, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 35, "avatar": "https://randomuser.me/api/portraits/women/5.jpg", "nickname": "user35", "stories": [
+        {"id": 68, "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9", "isLiked": false, "isSeen": false},
+        {"id": 69, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false},
+        {"id": 70, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 36, "avatar": "https://randomuser.me/api/portraits/women/1.jpg", "nickname": "user36", "stories": [
+        {"id": 71, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false},
+        {"id": 72, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 37, "avatar": "https://randomuser.me/api/portraits/men/2.jpg", "nickname": "user37", "stories": [
+        {"id": 73, "url": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308", "isLiked": false, "isSeen": false},
+        {"id": 74, "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 38, "avatar": "https://randomuser.me/api/portraits/women/3.jpg", "nickname": "user38", "stories": [
+        {"id": 75, "url": "https://images.unsplash.com/photo-1519985176271-adb1088fa94c", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 39, "avatar": "https://randomuser.me/api/portraits/men/4.jpg", "nickname": "user39", "stories": [
+        {"id": 76, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false},
+        {"id": 77, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 40, "avatar": "https://randomuser.me/api/portraits/women/5.jpg", "nickname": "user40", "stories": [
+        {"id": 78, "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9", "isLiked": false, "isSeen": false},
+        {"id": 79, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false},
+        {"id": 80, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 41, "avatar": "https://randomuser.me/api/portraits/women/1.jpg", "nickname": "user41", "stories": [
+        {"id": 81, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false},
+        {"id": 82, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 42, "avatar": "https://randomuser.me/api/portraits/men/2.jpg", "nickname": "user42", "stories": [
+        {"id": 83, "url": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308", "isLiked": false, "isSeen": false},
+        {"id": 84, "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 43, "avatar": "https://randomuser.me/api/portraits/women/3.jpg", "nickname": "user43", "stories": [
+        {"id": 85, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 44, "avatar": "https://randomuser.me/api/portraits/men/4.jpg", "nickname": "user44", "stories": [
+        {"id": 86, "url": "https://images.unsplash.com/photo-1519985176271-adb1088fa94c", "isLiked": false, "isSeen": false},
+        {"id": 87, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 45, "avatar": "https://randomuser.me/api/portraits/women/5.jpg", "nickname": "user45", "stories": [
+        {"id": 88, "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9", "isLiked": false, "isSeen": false},
+        {"id": 89, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false},
+        {"id": 90, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 46, "avatar": "https://randomuser.me/api/portraits/women/1.jpg", "nickname": "user46", "stories": [
+        {"id": 91, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false},
+        {"id": 92, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 47, "avatar": "https://randomuser.me/api/portraits/men/2.jpg", "nickname": "user47", "stories": [
+        {"id": 93, "url": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308", "isLiked": false, "isSeen": false},
+        {"id": 94, "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 48, "avatar": "https://randomuser.me/api/portraits/women/3.jpg", "nickname": "user48", "stories": [
+        {"id": 95, "url": "https://images.unsplash.com/photo-1519985176271-adb1088fa94c", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 49, "avatar": "https://randomuser.me/api/portraits/men/4.jpg", "nickname": "user49", "stories": [
+        {"id": 96, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false},
+        {"id": 97, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 50, "avatar": "https://randomuser.me/api/portraits/women/5.jpg", "nickname": "user50", "stories": [
+        {"id": 98, "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9", "isLiked": false, "isSeen": false},
+        {"id": 99, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false},
+        {"id": 100, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 51, "avatar": "https://randomuser.me/api/portraits/women/1.jpg", "nickname": "user51", "stories": [
+        {"id": 101, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false},
+        {"id": 102, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 52, "avatar": "https://randomuser.me/api/portraits/men/2.jpg", "nickname": "user52", "stories": [
+        {"id": 103, "url": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308", "isLiked": false, "isSeen": false},
+        {"id": 104, "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 53, "avatar": "https://randomuser.me/api/portraits/women/3.jpg", "nickname": "user53", "stories": [
+        {"id": 105, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 54, "avatar": "https://randomuser.me/api/portraits/men/4.jpg", "nickname": "user54", "stories": [
+        {"id": 106, "url": "https://images.unsplash.com/photo-1519985176271-adb1088fa94c", "isLiked": false, "isSeen": false},
+        {"id": 107, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 55, "avatar": "https://randomuser.me/api/portraits/women/5.jpg", "nickname": "user55", "stories": [
+        {"id": 108, "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9", "isLiked": false, "isSeen": false},
+        {"id": 109, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false},
+        {"id": 110, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 56, "avatar": "https://randomuser.me/api/portraits/women/1.jpg", "nickname": "user56", "stories": [
+        {"id": 111, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false},
+        {"id": 112, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 57, "avatar": "https://randomuser.me/api/portraits/men/2.jpg", "nickname": "user57", "stories": [
+        {"id": 113, "url": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308", "isLiked": false, "isSeen": false},
+        {"id": 114, "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 58, "avatar": "https://randomuser.me/api/portraits/women/3.jpg", "nickname": "user58", "stories": [
+        {"id": 115, "url": "https://images.unsplash.com/photo-1519985176271-adb1088fa94c", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 59, "avatar": "https://randomuser.me/api/portraits/men/4.jpg", "nickname": "user59", "stories": [
+        {"id": 116, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false},
+        {"id": 117, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 60, "avatar": "https://randomuser.me/api/portraits/women/5.jpg", "nickname": "user60", "stories": [
+        {"id": 118, "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9", "isLiked": false, "isSeen": false},
+        {"id": 119, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false},
+        {"id": 120, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 61, "avatar": "https://randomuser.me/api/portraits/women/1.jpg", "nickname": "user61", "stories": [
+        {"id": 121, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false},
+        {"id": 122, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 62, "avatar": "https://randomuser.me/api/portraits/men/2.jpg", "nickname": "user62", "stories": [
+        {"id": 123, "url": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308", "isLiked": false, "isSeen": false},
+        {"id": 124, "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 63, "avatar": "https://randomuser.me/api/portraits/women/3.jpg", "nickname": "user63", "stories": [
+        {"id": 125, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 64, "avatar": "https://randomuser.me/api/portraits/men/4.jpg", "nickname": "user64", "stories": [
+        {"id": 126, "url": "https://images.unsplash.com/photo-1519985176271-adb1088fa94c", "isLiked": false, "isSeen": false},
+        {"id": 127, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 65, "avatar": "https://randomuser.me/api/portraits/women/5.jpg", "nickname": "user65", "stories": [
+        {"id": 128, "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9", "isLiked": false, "isSeen": false},
+        {"id": 129, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false},
+        {"id": 130, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 66, "avatar": "https://randomuser.me/api/portraits/women/1.jpg", "nickname": "user66", "stories": [
+        {"id": 131, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false},
+        {"id": 132, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 67, "avatar": "https://randomuser.me/api/portraits/men/2.jpg", "nickname": "user67", "stories": [
+        {"id": 133, "url": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308", "isLiked": false, "isSeen": false},
+        {"id": 134, "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 68, "avatar": "https://randomuser.me/api/portraits/women/3.jpg", "nickname": "user68", "stories": [
+        {"id": 135, "url": "https://images.unsplash.com/photo-1519985176271-adb1088fa94c", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 69, "avatar": "https://randomuser.me/api/portraits/men/4.jpg", "nickname": "user69", "stories": [
+        {"id": 136, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false},
+        {"id": 137, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 70, "avatar": "https://randomuser.me/api/portraits/women/5.jpg", "nickname": "user70", "stories": [
+        {"id": 138, "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9", "isLiked": false, "isSeen": false},
+        {"id": 139, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false},
+        {"id": 140, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 71, "avatar": "https://randomuser.me/api/portraits/women/1.jpg", "nickname": "user71", "stories": [
+        {"id": 141, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false},
+        {"id": 142, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 72, "avatar": "https://randomuser.me/api/portraits/men/2.jpg", "nickname": "user72", "stories": [
+        {"id": 143, "url": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308", "isLiked": false, "isSeen": false},
+        {"id": 144, "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 73, "avatar": "https://randomuser.me/api/portraits/women/3.jpg", "nickname": "user73", "stories": [
+        {"id": 145, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 74, "avatar": "https://randomuser.me/api/portraits/men/4.jpg", "nickname": "user74", "stories": [
+        {"id": 146, "url": "https://images.unsplash.com/photo-1519985176271-adb1088fa94c", "isLiked": false, "isSeen": false},
+        {"id": 147, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 75, "avatar": "https://randomuser.me/api/portraits/women/5.jpg", "nickname": "user75", "stories": [
+        {"id": 148, "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9", "isLiked": false, "isSeen": false},
+        {"id": 149, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false},
+        {"id": 150, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 76, "avatar": "https://randomuser.me/api/portraits/women/1.jpg", "nickname": "user76", "stories": [
+        {"id": 151, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false},
+        {"id": 152, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 77, "avatar": "https://randomuser.me/api/portraits/men/2.jpg", "nickname": "user77", "stories": [
+        {"id": 153, "url": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308", "isLiked": false, "isSeen": false},
+        {"id": 154, "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 78, "avatar": "https://randomuser.me/api/portraits/women/3.jpg", "nickname": "user78", "stories": [
+        {"id": 155, "url": "https://images.unsplash.com/photo-1519985176271-adb1088fa94c", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 79, "avatar": "https://randomuser.me/api/portraits/men/4.jpg", "nickname": "user79", "stories": [
+        {"id": 156, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false},
+        {"id": 157, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 80, "avatar": "https://randomuser.me/api/portraits/women/5.jpg", "nickname": "user80", "stories": [
+        {"id": 158, "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9", "isLiked": false, "isSeen": false},
+        {"id": 159, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false},
+        {"id": 160, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 81, "avatar": "https://randomuser.me/api/portraits/women/1.jpg", "nickname": "user81", "stories": [
+        {"id": 161, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false},
+        {"id": 162, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 82, "avatar": "https://randomuser.me/api/portraits/men/2.jpg", "nickname": "user82", "stories": [
+        {"id": 163, "url": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308", "isLiked": false, "isSeen": false},
+        {"id": 164, "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 83, "avatar": "https://randomuser.me/api/portraits/women/3.jpg", "nickname": "user83", "stories": [
+        {"id": 165, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 84, "avatar": "https://randomuser.me/api/portraits/men/4.jpg", "nickname": "user84", "stories": [
+        {"id": 166, "url": "https://images.unsplash.com/photo-1519985176271-adb1088fa94c", "isLiked": false, "isSeen": false},
+        {"id": 167, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 85, "avatar": "https://randomuser.me/api/portraits/women/5.jpg", "nickname": "user85", "stories": [
+        {"id": 168, "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9", "isLiked": false, "isSeen": false},
+        {"id": 169, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false},
+        {"id": 170, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 86, "avatar": "https://randomuser.me/api/portraits/women/1.jpg", "nickname": "user86", "stories": [
+        {"id": 171, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false},
+        {"id": 172, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 87, "avatar": "https://randomuser.me/api/portraits/men/2.jpg", "nickname": "user87", "stories": [
+        {"id": 173, "url": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308", "isLiked": false, "isSeen": false},
+        {"id": 174, "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 88, "avatar": "https://randomuser.me/api/portraits/women/3.jpg", "nickname": "user88", "stories": [
+        {"id": 175, "url": "https://images.unsplash.com/photo-1519985176271-adb1088fa94c", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 89, "avatar": "https://randomuser.me/api/portraits/men/4.jpg", "nickname": "user89", "stories": [
+        {"id": 176, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false},
+        {"id": 177, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 90, "avatar": "https://randomuser.me/api/portraits/women/5.jpg", "nickname": "user90", "stories": [
+        {"id": 178, "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9", "isLiked": false, "isSeen": false},
+        {"id": 179, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false},
+        {"id": 180, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 91, "avatar": "https://randomuser.me/api/portraits/women/1.jpg", "nickname": "user91", "stories": [
+        {"id": 181, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false},
+        {"id": 182, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 92, "avatar": "https://randomuser.me/api/portraits/men/2.jpg", "nickname": "user92", "stories": [
+        {"id": 183, "url": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308", "isLiked": false, "isSeen": false},
+        {"id": 184, "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 93, "avatar": "https://randomuser.me/api/portraits/women/3.jpg", "nickname": "user93", "stories": [
+        {"id": 185, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 94, "avatar": "https://randomuser.me/api/portraits/men/4.jpg", "nickname": "user94", "stories": [
+        {"id": 186, "url": "https://images.unsplash.com/photo-1519985176271-adb1088fa94c", "isLiked": false, "isSeen": false},
+        {"id": 187, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 95, "avatar": "https://randomuser.me/api/portraits/women/5.jpg", "nickname": "user95", "stories": [
+        {"id": 188, "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9", "isLiked": false, "isSeen": false},
+        {"id": 189, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false},
+        {"id": 190, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 96, "avatar": "https://randomuser.me/api/portraits/women/1.jpg", "nickname": "user96", "stories": [
+        {"id": 191, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false},
+        {"id": 192, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 97, "avatar": "https://randomuser.me/api/portraits/men/2.jpg", "nickname": "user97", "stories": [
+        {"id": 193, "url": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308", "isLiked": false, "isSeen": false},
+        {"id": 194, "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 98, "avatar": "https://randomuser.me/api/portraits/women/3.jpg", "nickname": "user98", "stories": [
+        {"id": 195, "url": "https://images.unsplash.com/photo-1519985176271-adb1088fa94c", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 99, "avatar": "https://randomuser.me/api/portraits/men/4.jpg", "nickname": "user99", "stories": [
+        {"id": 196, "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca", "isLiked": false, "isSeen": false},
+        {"id": 197, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]},
+    {"id": 100, "avatar": "https://randomuser.me/api/portraits/women/5.jpg", "nickname": "user100", "stories": [
+        {"id": 198, "url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9", "isLiked": false, "isSeen": false},
+        {"id": 199, "url": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99", "isLiked": false, "isSeen": false},
+        {"id": 200, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb", "isLiked": false, "isSeen": false}
+    ]}
+]
