@@ -17,57 +17,64 @@ struct StoryViewer: View {
     }
     
     var body: some View {
-
-        GeometryReader { geometry in
-            ZStack(alignment: .top) {
-                if let story = viewModel.currentUserStories[safe: viewModel.currentIndex] {
-                    ImageLoaderView(urlString: story.url)
+        Group {
+            if let url = viewModel.currentStoryUrl {
+                content(url: url)
+            } else {
+                loaderView
+            }
+        }
+        .task {
+            await viewModel.getUserStories()
+        }
+        .navigationBarBackButtonHidden()
+        .statusBarHidden(true)
+    }
+    
+    private var loaderView: some View {
+        ProgressView()
+            .tint(.white)
+    }
+    
+    private func content(url: String) -> some View {
+        ZStack(alignment: .top) {
+            ImageLoaderView(urlString: url,
+                            onLoaded: viewModel.loadedImage,
+                            onError: viewModel.errorLoadingImage)
+            
+            VStack {
+                HStack(spacing: DSSpacing.xxxsmall.rawValue) {
+                    ForEach(Array(viewModel.currentUserStories.enumerated()), id: \.element.id) { index, story in
+                        // TODO: - Split to a separate view to control rebuild ( Split ViewModel )
+                        ProgressView(value: viewModel.currentProgressForIndex(story: story))
+                            .progressViewStyle(LinearProgressViewStyle(tint: .white))
+                            .frame(height: DSSpacing.xxsmall.rawValue)
+                            .animation(index == viewModel.currentIndex ? .linear : .none, value: viewModel.progress)
+                    }
                 }
-
-                VStack {
-                    HStack(spacing: DSSpacing.xxxsmall.rawValue) {
-                        ForEach(Array(viewModel.currentUserStories.enumerated()), id: \.element.id) { index, story in
-                            ProgressView(value: story.progress)
-                                .progressViewStyle(LinearProgressViewStyle(tint: .white))
-                                .frame(height: DSSpacing.xxsmall.rawValue)
-                                .animation(index == viewModel.currentIndex ? .linear : .none, value: story.progress)
+                .padding(.top, 56)
+                .padding(.horizontal)
+                HStack {
+                    Image(systemName: viewModel.currentStoryIsLiked ? "heart.fill" : "heart")
+                        .foregroundStyle(.red)
+                        .anyButton {
+                            viewModel.setCurrentStoryAsLiked()
                         }
-                    }
-                    .padding(.top, 56)
-                    .padding(.horizontal)
-                    HStack {
-                        Image(systemName: viewModel.currentUserStories[safe: viewModel.currentIndex]?.isLiked ?? false ? "heart.fill" : "heart")
-                            .anyButton {
-                                viewModel.setCurrentStoryAsLiked()
-                            }
-                        Spacer()
-                        Image(systemName: "xmark")
-                            .anyButton {
-                                dismiss()
-                            }
-                    }
-                    .padding(.all, DSSpacing.medium.rawValue)
+                    Spacer()
+                    Image(systemName: "xmark")
+                        .anyButton {
+                            viewModel.dismissStory()
+                        }
                 }
-            }
-            .ignoresSafeArea()
-            .storyGestures(
-                onTapLeft: viewModel.goToPreviousStory,
-                onTapRight: viewModel.goToNextStory,
-                onPause: viewModel.pauseTimer,
-                onResume: viewModel.resumeTimer
-            )
-        }
-        .onAppear {
-            viewModel.onAppear()
-        }
-        .onDisappear {
-            viewModel.onDisappear()
-        }
-        .onChange(of: viewModel.shouldDismiss) { _, newValue in
-            #warning("TODO: should be handled by the view model")
-            if newValue {
-                dismiss()
+                .padding(.all, DSSpacing.medium.rawValue)
             }
         }
+        .ignoresSafeArea()
+        .storyGestures(
+            onTapLeft: viewModel.goToPreviousStory,
+            onTapRight: viewModel.goToNextStory,
+            onPause: viewModel.pauseTimer,
+            onResume: viewModel.resumeTimer
+        )
     }
 }

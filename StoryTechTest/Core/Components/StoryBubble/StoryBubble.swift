@@ -6,11 +6,11 @@
 //
 
 import SwiftUI
+import SwiftfulRouting
 
 struct StoryBubble: View {
 
     @State var viewModel: StoryBubbleViewModel
-    @State private var isPresenting: Bool = false
 
     var body: some View {
         VStack {
@@ -24,13 +24,8 @@ struct StoryBubble: View {
                 )
                 .padding(6)
                 .anyButton(.press) {
-                    isPresenting = true
+                    viewModel.goToStory()
                 }
-                .fullScreenCover(isPresented: $isPresenting) {
-                    #warning("TODO: Routing should not be in UI")
-                    StoryViewer(viewModel: StoryViewerViewModel(userId: viewModel.user.id))
-                }
-
             Text(viewModel.user.nickname)
                 .font(.caption2)
                 .foregroundColor(.primary)

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DA3AD8402DDDC27500210A44 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = DA3AD83F2DDDC27500210A44 /* Factory */; };
 		DA3AD8632DDDC46A00210A44 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = DA3AD8622DDDC46A00210A44 /* SDWebImageSwiftUI */; };
+		DA8B0A632DE0571B0003A9EB /* SwiftfulRouting in Frameworks */ = {isa = PBXBuildFile; productRef = DA8B0A622DE0571B0003A9EB /* SwiftfulRouting */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA3AD8632DDDC46A00210A44 /* SDWebImageSwiftUI in Frameworks */,
+				DA8B0A632DE0571B0003A9EB /* SwiftfulRouting in Frameworks */,
 				DA3AD8402DDDC27500210A44 /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,6 +123,7 @@
 			packageProductDependencies = (
 				DA3AD83F2DDDC27500210A44 /* Factory */,
 				DA3AD8622DDDC46A00210A44 /* SDWebImageSwiftUI */,
+				DA8B0A622DE0571B0003A9EB /* SwiftfulRouting */,
 			);
 			productName = StoryTechTest;
 			productReference = DA3AD8142DDDC1AC00210A44 /* StoryTechTest.app */;
@@ -207,6 +210,7 @@
 			packageReferences = (
 				DA3AD83E2DDDC27500210A44 /* XCRemoteSwiftPackageReference "Factory" */,
 				DA3AD8612DDDC46A00210A44 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				DA8B0A612DE0571B0003A9EB /* XCRemoteSwiftPackageReference "SwiftfulRouting" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DA3AD8152DDDC1AC00210A44 /* Products */;
@@ -589,6 +593,14 @@
 				minimumVersion = 3.1.3;
 			};
 		};
+		DA8B0A612DE0571B0003A9EB /* XCRemoteSwiftPackageReference "SwiftfulRouting" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:SwiftfulThinking/SwiftfulRouting.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -601,6 +613,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DA3AD8612DDDC46A00210A44 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		DA8B0A622DE0571B0003A9EB /* SwiftfulRouting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA8B0A612DE0571B0003A9EB /* XCRemoteSwiftPackageReference "SwiftfulRouting" */;
+			productName = SwiftfulRouting;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

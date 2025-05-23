@@ -16,11 +16,17 @@ struct ImageLoaderView: View {
 
     private let urlString: String
     private let resizingMode: ContentMode
+    private let onLoaded: (() -> Void)?
+    private let onError: (() -> Void)?
     
     init(urlString: String = Constants.randomImage,
-         resizingMode: ContentMode = .fill) {
+         resizingMode: ContentMode = .fill,
+         onLoaded: (() -> Void)? = nil,
+         onError: (() -> Void)? = nil) {
         self.urlString = urlString
         self.resizingMode = resizingMode
+        self.onLoaded = onLoaded
+        self.onError = onError
     }
     
     var body: some View {
@@ -28,6 +34,15 @@ struct ImageLoaderView: View {
             .opacity(0.5)
             .overlay(
                 WebImage(url: URL(string: urlString))
+                    .onSuccess { _, _, _ in
+                        onLoaded?()
+                    }
+                    .onFailure(perform: { error in
+                        onError?()
+                    })
+                    .onProgress(perform: { _, _ in
+                        // handle Loading
+                    })
                     .resizable()
                     .indicator(.progress)
                     .aspectRatio(contentMode: resizingMode)

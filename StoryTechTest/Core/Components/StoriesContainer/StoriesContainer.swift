@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftfulRouting
 
 struct StoriesContainer: View {
     @State private var viewModel: StoriesContainerViewModel
@@ -15,30 +16,27 @@ struct StoriesContainer: View {
     }
 
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            LazyHStack(spacing: DSSpacing.small.rawValue) {
-                ForEach(viewModel.users, id: \ .id) { user in
-                    StoryBubble(viewModel: StoryBubbleViewModel(user: user))
-                        .onAppear {
-                            if user == viewModel.users.last {
-                                viewModel.shouldLoadNextPage = true
+        RouterView(addModuleSupport: true) { router in
+            ScrollView(.horizontal, showsIndicators: false) {
+                LazyHStack(spacing: DSSpacing.small.rawValue) {
+                    ForEach(viewModel.users, id: \ .id) { user in
+                        StoryBubble(viewModel: StoryBubbleViewModel(user: user, router: CoreRouting(router: router)))
+                            .onAppear {
+                                if user == viewModel.users.last {
+                                    viewModel.loadNextPage()
+                                }
                             }
-                        }
+                    }
+                    if viewModel.isLoadingPage {
+                        ProgressView()
+                            .frame(width: 40, height: 40)
+                    }
                 }
-                if viewModel.isLoadingPage {
-                    ProgressView()
-                        .frame(width: 40, height: 40)
-                }
+                .padding([.horizontal, .top], DSSpacing.xsmall.rawValue)
             }
-            .padding([.horizontal, .top], DSSpacing.xsmall.rawValue)
         }
         .onAppear {
             viewModel.loadInitialAvatars()
-        }
-        .onChange(of: viewModel.shouldLoadNextPage) { _, shouldLoad in
-            if shouldLoad {
-                viewModel.loadNextPage()
-            }
         }
     }
 }

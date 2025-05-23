@@ -10,7 +10,7 @@ import Factory
 
 @Observable
 class StoriesContainerViewModel {
-    var users: [StoryUserDto] = []
+    var users: [StoryUser] = []
     var isLoadingPage = false
     var shouldLoadNextPage = false
     
@@ -25,10 +25,9 @@ class StoriesContainerViewModel {
 
     func loadInitialAvatars() {
         guard users.isEmpty else { return }
-        currentPage = 1
         canLoadMorePages = true
         users = []
-        loadPage(page: currentPage)
+        loadPage(page: 0)
     }
     
     func loadNextPage() {
@@ -41,16 +40,15 @@ class StoriesContainerViewModel {
         isLoadingPage = true
         Task {
             do {
-                let users = try await storiesService.fetchUsersStories(pageSize: pageSize, page: page)
-                if users.count < pageSize {
+                let newUsers = try await storiesService.fetchUsersStories(pageSize: pageSize, page: page)
+                if newUsers.count < pageSize {
                     canLoadMorePages = false
                 }
-                self.users = users
+                self.users.append(contentsOf: newUsers)
             } catch {
                 canLoadMorePages = false
             }
             isLoadingPage = false
-            shouldLoadNextPage = false
         }
     }
 }
