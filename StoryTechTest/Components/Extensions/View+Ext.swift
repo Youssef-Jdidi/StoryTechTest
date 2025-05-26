@@ -37,4 +37,13 @@ extension View {
     func tappableBackground() -> some View {
         background(Color.black.opacity(0.001))
     }
+    
+    @ViewBuilder
+    func ifElseSatisfiedCondition(_ condition: Bool, ifTransform: (Self) -> some View, elseTransform: (Self) -> some View) -> some View {
+        if condition {
+            ifTransform(self)
+        } else {
+            elseTransform(self)
+        }
+    }
 }

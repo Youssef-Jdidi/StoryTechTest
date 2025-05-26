@@ -6,21 +6,20 @@
 //
 
 import SwiftUI
+import Factory
 
 @main
 struct StoryTechTestApp: App {
+    private let coreBuiler: CoreBuilder
+    
     var body: some Scene {
         WindowGroup {
-            RootTabView(screens: [
-                TabBarScreen(systemImage: "house") {
-                    HomeView().asAnyView()
-                },
-                TabBarScreen(systemImage: "magnifyingglass") { Text("Search").asAnyView() },
-                TabBarScreen(systemImage: "play.rectangle") { Text("Reels").asAnyView() },
-                TabBarScreen(systemImage: "bag") { Text("bag").asAnyView() },
-                TabBarScreen(systemImage: "person.crop.circle") { Text("Profile").asAnyView() }
-            ])
+            coreBuiler.build()
         }
+    }
+    
+    init() {
+        self.coreBuiler = Container.shared.coreBuilder()
     }
 }
 

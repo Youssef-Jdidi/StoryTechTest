@@ -29,11 +29,29 @@ extension GlobalRouter {
     }
 }
 
+@MainActor
+protocol Builder {
+    associatedtype Screen: View
+    func build() -> Screen
+}
 
 @MainActor
-struct CoreBuilder {
-    
+struct CoreBuilder: Builder {
+    typealias Screen = RootTabView
+
     nonisolated init() {}
+    
+    func build() -> RootTabView {
+        RootTabView(screens: [
+            TabBarScreen(systemImage: "house") {
+                HomeView().asAnyView()
+            },
+            TabBarScreen(systemImage: "magnifyingglass") { Text("Search").asAnyView() },
+            TabBarScreen(systemImage: "play.rectangle") { Text("Reels").asAnyView() },
+            TabBarScreen(systemImage: "bag") { Text("bag").asAnyView() },
+            TabBarScreen(systemImage: "person.crop.circle") { Text("Profile").asAnyView() }
+        ])
+    }
 
     @ViewBuilder
     func createStoryViewer(userId: Int, router: AnyRouter) -> some View {

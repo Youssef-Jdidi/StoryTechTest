@@ -10,10 +10,12 @@ import SwiftfulRouting
 
 @Observable
 class StoryBubbleViewModel {
+    var isSeen: Bool {
+        user.stories.allSatisfy { $0.isSeen }
+    }
     var user: StoryUser
     private let router: StoryRouter
 
-    #warning("Should take story from storyService")
     init(user: StoryUser, router: StoryRouter) {
         self.user = user
         self.router = router

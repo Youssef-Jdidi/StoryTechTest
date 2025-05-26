@@ -17,11 +17,23 @@ struct StoryBubble: View {
             ImageLoaderView(urlString: viewModel.user.avatar)
                 .frame(width: 60, height: 60)
                 .cornerRadius(60)
-                .overlay(
-                    Circle()
-                        .stroke(LinearGradient(colors: [.purple, .red,.orange,.yellow], startPoint: .topLeading, endPoint: .bottomTrailing), lineWidth: 2.5)
-                        .frame(width: 68, height: 68)
-                )
+                .ifElseSatisfiedCondition(viewModel.isSeen,
+                                          ifTransform: { content in
+                    content
+                        .overlay(
+                            Circle()
+                                .stroke(.gray, lineWidth: 2.5)
+                                .frame(width: 68, height: 68)
+                        )
+                },
+                                          elseTransform: { content in
+                    content
+                        .overlay(
+                            Circle()
+                                .stroke(LinearGradient(colors: [.purple, .red,.orange,.yellow], startPoint: .topLeading, endPoint: .bottomTrailing), lineWidth: 2.5)
+                                .frame(width: 68, height: 68)
+                        )
+                })
                 .padding(6)
                 .anyButton(.press) {
                     viewModel.goToStory()
