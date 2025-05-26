@@ -16,7 +16,8 @@ struct StoriesContainer: View {
     }
 
     var body: some View {
-        RouterView(addModuleSupport: true) { router in
+        //TODO: Router View should be in CoreRouter
+        RouterView { router in
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHStack(spacing: DSSpacing.small.rawValue) {
                     ForEach(viewModel.users, id: \ .id) { user in
@@ -34,9 +35,9 @@ struct StoriesContainer: View {
                 }
                 .padding([.horizontal, .top], DSSpacing.xsmall.rawValue)
             }
-        }
-        .onAppear {
-            viewModel.loadInitialAvatars()
+            .onAppear {
+                viewModel.loadInitialAvatars()
+            }
         }
     }
 }

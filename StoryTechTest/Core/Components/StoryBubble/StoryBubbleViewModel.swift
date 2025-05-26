@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftfulRouting
+import Factory
 
 @Observable
 class StoryBubbleViewModel {
@@ -15,15 +16,27 @@ class StoryBubbleViewModel {
     }
     var user: StoryUser
     private let router: StoryRouter
+    private let storyService: StoriesServiceProtocol
 
-    init(user: StoryUser, router: StoryRouter) {
+    init(user: StoryUser, router: StoryRouter, storyService: StoriesServiceProtocol = Container.shared.storiesService()) {
         self.user = user
         self.router = router
+        self.storyService = storyService
     }
     
     func goToStory() {
-        Task {
-            await router.showUserStory(userId: user.id, option: .fullScreenCover)
+        Task { [weak self] in
+            guard let self else { return }
+            await router.showUserStory(userId: user.id, option: .fullScreenCover, onDisappear: refreshBubble)
+        }
+    }
+
+    //TODO: Should be done to all stories and not only the story we came from
+    @MainActor
+    private func refreshBubble() {
+        Task { @MainActor in
+            let updatedUser = try await storyService.fetchUserStory(userId: user.id) ?? user
+            self.user = updatedUser
         }
     }
 }

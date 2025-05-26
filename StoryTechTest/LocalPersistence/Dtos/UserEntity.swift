@@ -13,6 +13,7 @@ final class StoryUserEntity {
     var id: Int
     var avatar: String
     var nickname: String
+    @Relationship(inverse: \StoryEntity.user)
     var stories: [StoryEntity]
     
     init(id: Int, avatar: String, nickname: String, stories: [StoryEntity]) {
@@ -44,6 +45,7 @@ final class StoryEntity {
     var url: String
     var isLiked: Bool
     var isSeen: Bool
+    var user: StoryUserEntity?
     
     init(id: Int, url: String, isLiked: Bool, isSeen: Bool) {
         self.id = id

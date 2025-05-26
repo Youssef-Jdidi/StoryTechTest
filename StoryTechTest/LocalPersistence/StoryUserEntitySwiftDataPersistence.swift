@@ -12,7 +12,8 @@ protocol StoriesDataPersistenceProtocol {
     func add(models: [StoryUser]) async throws
     func getAll(pageSize: Int, offset: Int) async throws -> [StoryUser]
     func getById(_ id: Int) async throws -> StoryUser?
-    func update(_ updateBlock: @escaping (inout StoryUserEntity) -> Void, where predicate: Predicate<StoryUserEntity>?) async throws
+    func update(_ updateBlock: @escaping (inout StoryUserEntity) -> Void,
+                where predicate: Predicate<StoryUserEntity>?) async throws
     func getStoryById(_ id: Int) async throws -> Story?
 }
 
@@ -45,11 +46,12 @@ actor StoriesDataPersistence: StoriesDataPersistenceProtocol {
         return result?.stories.first(where: { $0.id == id }).map(Story.init)
     }
 
-    func update(_ updateBlock: @escaping (inout StoryUserEntity) -> Void, where predicate: Predicate<StoryUserEntity>?) async throws {
+    func update(_ updateBlock: @escaping (inout StoryUserEntity) -> Void,
+                where predicate: Predicate<StoryUserEntity>?) async throws {
         var descriptor = FetchDescriptor<StoryUserEntity>()
         descriptor.predicate = predicate
         var results = try context.fetch(descriptor)
-        
+
         for i in results.indices {
             updateBlock(&results[i])
         }

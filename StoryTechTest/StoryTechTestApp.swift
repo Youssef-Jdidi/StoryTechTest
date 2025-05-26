@@ -22,5 +22,3 @@ struct StoryTechTestApp: App {
         self.coreBuiler = Container.shared.coreBuilder()
     }
 }
-
-

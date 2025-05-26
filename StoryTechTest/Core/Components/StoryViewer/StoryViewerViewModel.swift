@@ -55,7 +55,8 @@ class StoryViewerViewModel {
     }
     
     func loadedImage() {
-        Task {
+        Task { [weak self] in
+            guard let self else { return }
             await startTimer()
         }
     }
@@ -78,7 +79,8 @@ class StoryViewerViewModel {
     }
 
     func setCurrentStoryAsLiked() {
-        Task {
+        Task { [weak self] in
+            guard let self else { return }
             do {
                 guard let story = currentStory else { return }
                 try await storyService.toggleLike(userId: userId, storyId: story.id)
@@ -115,7 +117,8 @@ class StoryViewerViewModel {
         guard isPaused else { return }
         isPaused = false
         startDate = Date()
-        Task {
+        Task { [weak self] in
+            guard let self else { return }
             await startTimer()
         }
     }
@@ -141,11 +144,13 @@ class StoryViewerViewModel {
             currentStory = currentUserStories[safe: currentIndex]
             pausedProgress = 0
             progressValue = 0
-            Task {
+            Task { [weak self] in
+                guard let self else { return }
                 await startTimer()
             }
         } else {
-            Task {
+            Task { [weak self] in
+                guard let self else { return }
                 await startTimer()
             }
         }
@@ -153,23 +158,26 @@ class StoryViewerViewModel {
     
     func dismissStory() {
         timer?.invalidate()
-        Task { @MainActor in
+        Task { @MainActor [weak self] in
+            guard let self else { return }
             router.dismissScreen()
         }
     }
     
     private func goToNextUserStories() {
-        Task {
+        Task { [weak self] in
+            guard let self else { return }
             guard let nextUserId = try? await storyService.getNextUserId(from: userId) else {
                 dismissStory()
                 return
             }
-            await router.showUserStory(userId: nextUserId, option: .push)
+            await router.showUserStory(userId: nextUserId, option: .push, onDisappear: nil)
         }
     }
     
     private func setCurrentStoryAsSeen(story: Story) {
-        Task {
+        Task { [weak self] in
+            guard let self else { return }
             do {
                 try await storyService.setStorySeen(userId: userId, storyId: story.id)
                 if let index = currentUserStories.firstIndex(where: { $0.id == story.id }) {

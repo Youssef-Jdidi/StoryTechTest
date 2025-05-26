@@ -68,8 +68,8 @@ struct CoreRouting {
         self.router = router
     }
     
-    func showUserStory(userId: Int, option: SegueOption) async {
-        router.showScreen(option) { router in
+    func showUserStory(userId: Int, option: SegueOption, onDisappear: (@MainActor () -> Void)? = nil) async {
+        router.showScreen(option, onDismiss: onDisappear) { router in
             coreBuilder.createStoryViewer(userId: userId, router: router)
         }
     }

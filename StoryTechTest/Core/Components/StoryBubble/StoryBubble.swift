@@ -44,10 +44,3 @@ struct StoryBubble: View {
         }
     }
 }
-
-struct StoryView: View {
-    var body: some View {
-        ImageLoaderView()
-            .ignoresSafeArea()
-    }
-}

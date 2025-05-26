@@ -9,7 +9,7 @@ import Foundation
 import SwiftfulRouting
 
 protocol StoryRouter: GlobalRouter {
-    func showUserStory(userId: Int, option: SegueOption) async
+    func showUserStory(userId: Int, option: SegueOption, onDisappear: (@MainActor () -> Void)?) async
 }
 
 extension CoreRouting: StoryRouter {}

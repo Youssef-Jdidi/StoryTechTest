@@ -38,13 +38,14 @@ class StoriesContainerViewModel {
     
     private func loadPage(page: Int) {
         isLoadingPage = true
-        Task {
+        Task { [weak self] in
+            guard let self else { return }
             do {
                 let newUsers = try await storiesService.fetchUsersStories(pageSize: pageSize, page: page)
                 if newUsers.count < pageSize {
                     canLoadMorePages = false
                 }
-                self.users.append(contentsOf: newUsers)
+                users.append(contentsOf: newUsers)
             } catch {
                 canLoadMorePages = false
             }

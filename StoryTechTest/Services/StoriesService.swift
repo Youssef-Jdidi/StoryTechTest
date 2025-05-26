@@ -33,20 +33,29 @@ protocol StoriesServiceProtocol {
 actor StoriesService: StoriesServiceProtocol {
     private let networkingManager: NetworkingProtocol
     private let userEntityDataSource: any StoriesDataPersistenceProtocol
+    private let syncData: SyncData
     private var userStories: [StoryUser] = []
 
     init(networkingManager: NetworkingProtocol = Container.shared.networkingManager(.local),
-         userEntityDataSource: any StoriesDataPersistenceProtocol = Container.shared.userEntityDataSource()) {
+         userEntityDataSource: any StoriesDataPersistenceProtocol = Container.shared.userEntityDataSource(),
+         syncData: SyncData = SyncData()) {
         self.networkingManager = networkingManager
         self.userEntityDataSource = userEntityDataSource
+        self.syncData = syncData
     }
     
     func fetchUsersStories(pageSize: Int, page: Int) async throws -> [StoryUser] {
-        try? await Task.sleep(nanoseconds: 500_000_000)
-        self.userStories = try await userEntityDataSource.getAll(pageSize: pageSize, offset: page)
+        try? await Task.sleep(nanoseconds: 500_000_000) // MOCK Delay
+        let result = try await userEntityDataSource.getAll(pageSize: pageSize, offset: page)
+        if result.isEmpty {
+            try await syncData()
+            self.userStories = try await userEntityDataSource.getAll(pageSize: pageSize, offset: page)
+            return userStories
+        }
+        self.userStories = result
         return userStories
     }
-    
+
     func fetchUserStory(userId: Int) async throws -> StoryUser? {
         try? await Task.sleep(nanoseconds: 500_000_000)
         let user = try await userEntityDataSource.getById(userId)
@@ -74,5 +83,27 @@ actor StoriesService: StoriesServiceProtocol {
         try await userEntityDataSource.update({ entity in
             entity.stories.first(where: { $0.id == storyId })?.isLiked.toggle()
         }, where: #Predicate { $0.id == userId})
+    }
+}
+
+struct SyncData {
+    private let networkingManger: NetworkingProtocol
+    private let storiesDataSource: any StoriesDataPersistenceProtocol
+    
+    init(networkingManger: NetworkingProtocol = Container.shared.networkingManager(.local),
+         storiesDataSource: any StoriesDataPersistenceProtocol = Container.shared.userEntityDataSource()) {
+        self.networkingManger = networkingManger
+        self.storiesDataSource = storiesDataSource
+    }
+    
+    func callAsFunction() async throws {
+        // Check if SwiftData populated
+        let result = try await storiesDataSource.getAll(pageSize: 1, offset: 1)
+        // If the result is empty, fetch from Networking and populate SwiftData
+        guard result.isEmpty else { return }
+        let dtos: [StoryUserDto] = try await networkingManger.fetchData(from: .fetchStories)
+        let data = dtos.map(StoryUser.init)
+        // Save the fetched data to SwiftData
+        try await storiesDataSource.add(models: data)
     }
 }
