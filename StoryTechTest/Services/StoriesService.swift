@@ -7,6 +7,7 @@
 
 import Foundation
 import Factory
+import SwiftData
 
 extension Container {
     var storiesService: Factory<StoriesServiceProtocol> {
@@ -14,7 +15,9 @@ extension Container {
     }
     
     var userEntityDataSource: Factory<any SwiftDataPersistenceProtocol> {
-        self { StoriesDataPersistence() }.cached
+        let container = try! ModelContainer(for: StoryUserEntity.self,
+                                            configurations: ModelConfiguration())
+        return self { StoriesDataPersistence(modelContainer: container)}.cached
     }
 }
 
