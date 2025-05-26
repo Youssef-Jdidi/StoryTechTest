@@ -33,14 +33,9 @@ StoryTechTestUITests/       # UI tests
 - [Factory](https://github.com/hmlongco/Factory): Dependency injection for fast easy and managed DI
 - [SDWebImageSwiftUI](https://github.com/SDWebImage/SDWebImageSwiftUI): Image loading, handle caches
 
-### Missed Features
-- Likes / isSeen are only implemented in the scope of the story itself ( when dismissing the StoryView we lose the data ) since it's not persisted through StoriesService.
-- routing between different users stories ( for now when user has no more stories it dismisses the StoryView )
 
 ### Technical Debts 
-- Decouple Routing from UI should be handled by viewModels that takes a module routing in init.
-- StoryBubbleViewModel should use the StoriesService that holds the centralized data and not get the story from its parent.
-- Decouple Networking layer that handles only DTOs that should be mapped to domain entities before reaching viewModels .
+- Decouple Routing 
 - Make Networking and DesignSystem as a separate SPM modules that exposes only protocols.
 - Handle displaying Errors.
 - Unit/UI tests.
