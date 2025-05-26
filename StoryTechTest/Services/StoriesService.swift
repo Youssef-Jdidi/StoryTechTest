@@ -14,7 +14,7 @@ extension Container {
         self { StoriesService() }.cached
     }
     
-    var userEntityDataSource: Factory<any SwiftDataPersistenceProtocol> {
+    var userEntityDataSource: Factory<any StoriesDataPersistenceProtocol> {
         let container = try! ModelContainer(for: StoryUserEntity.self,
                                             configurations: ModelConfiguration())
         return self { StoriesDataPersistence(modelContainer: container)}.cached
@@ -32,11 +32,11 @@ protocol StoriesServiceProtocol {
 
 actor StoriesService: StoriesServiceProtocol {
     private let networkingManager: NetworkingProtocol
-    private let userEntityDataSource: any SwiftDataPersistenceProtocol
+    private let userEntityDataSource: any StoriesDataPersistenceProtocol
     private var userStories: [StoryUser] = []
 
     init(networkingManager: NetworkingProtocol = Container.shared.networkingManager(.local),
-         userEntityDataSource: any SwiftDataPersistenceProtocol = Container.shared.userEntityDataSource()) {
+         userEntityDataSource: any StoriesDataPersistenceProtocol = Container.shared.userEntityDataSource()) {
         self.networkingManager = networkingManager
         self.userEntityDataSource = userEntityDataSource
     }

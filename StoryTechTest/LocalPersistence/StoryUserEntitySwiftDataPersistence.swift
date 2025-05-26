@@ -8,7 +8,7 @@
 import SwiftData
 import SwiftUI
 
-protocol SwiftDataPersistenceProtocol {
+protocol StoriesDataPersistenceProtocol {
     func add(models: [StoryUser]) async throws
     func getAll(pageSize: Int, offset: Int) async throws -> [StoryUser]
     func getById(_ id: Int) async throws -> StoryUser?
@@ -17,7 +17,7 @@ protocol SwiftDataPersistenceProtocol {
 }
 
 @ModelActor
-actor StoriesDataPersistence: SwiftDataPersistenceProtocol {
+actor StoriesDataPersistence: StoriesDataPersistenceProtocol {
     private var context: ModelContext { modelExecutor.modelContext }
 
     func add(models: [StoryUser]) async throws {
